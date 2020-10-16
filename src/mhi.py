@@ -5,7 +5,7 @@ MHI_DURATION = 50
 DEFAULT_THRESHOLD = 32
 
 
-def show_mhi_mei(video_src: str) -> None:
+def show_mhi(video_src: str) -> None:
     cv2.namedWindow("mhi")
     cv2.namedWindow("mei")
     cv2.namedWindow("raw")
@@ -55,4 +55,4 @@ def show_mhi_mei(video_src: str) -> None:
 
 if __name__ == "__main__":
     video_src = "assets/example.avi"
-    show_mhi_mei(video_src)
+    show_mhi(video_src)
