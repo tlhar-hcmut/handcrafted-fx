@@ -17,3 +17,9 @@ sift:
 
 hog:
 	${PY} src/hog.py 
+
+st:
+	${PY} src/st.py 
+
+dt:
+	${PY} src/dt.py
