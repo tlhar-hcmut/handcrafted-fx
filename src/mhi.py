@@ -23,7 +23,7 @@ def show_mhi(video_src: str) -> None:
     while True:
         ret, frame = cam.read()
         if not ret:
-            break
+            input("ENTER TO CONTINUE!")
         frame_diff = cv2.absdiff(frame, prev_frame)
         gray_diff = cv2.cvtColor(frame_diff, cv2.COLOR_BGR2GRAY)
         ret, fgmask = cv2.threshold(gray_diff, DEFAULT_THRESHOLD, 1, cv2.THRESH_BINARY)
@@ -47,7 +47,7 @@ def show_mhi(video_src: str) -> None:
 
         prev_frame = frame.copy()
 
-        cv2.waitKey(100)
+        cv2.waitKey(300)
 
     cam.release()
     cv2.destroyAllWindows()

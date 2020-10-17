@@ -11,8 +11,8 @@ def show_hog(img_src: str) -> None:
     fd, hog_image = hog(
         resized_img,
         orientations=9,
-        pixels_per_cell=(8, 8),
-        cells_per_block=(2, 2),
+        pixels_per_cell=(2, 2),
+        cells_per_block=(1, 1),
         visualize=True,
         multichannel=True,
     )
